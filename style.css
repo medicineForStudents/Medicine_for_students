@@ -262,9 +262,9 @@ header {
 hr {
   width: 60%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 .bodyEntryPage {
-  height: 80vh;
+  height: 120vh;
   .titlePage {
     font-size: 14px;
   }
@@ -304,6 +304,5 @@ hr {
   #label {
     padding: 4px;
   }
-  
 }
 }
