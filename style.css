@@ -129,10 +129,14 @@ header {
   cursor: pointer;
   border-radius: 66px;
 }
-
-.forgetPasswordStyle, .registrationStyle {
+.NoAccountText{
   color: white;
-  text-decoration: none;
+  margin: 10px;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 23px;
+}
+ .registrationStyle {
+  color: white;
   margin: 10px;
   font-family: 'Franklin Gothic Medium';
   font-size: 23px;
@@ -262,11 +266,26 @@ header {
 hr {
   width: 60%;
 }
-@media (min-height: 500px), screen and (orientation: portrait) {
+@media (max-height: 500px), screen and (orientation: portrait) {
   .bodyEntryPage {
-    
+    height: 100vh;
+    .titlePage{
+      display: none;
+    }
+    .logo_img {
+      display: none;
+
+    }
+    .headerBar {
+      display: none;
+      
+    }
+    .liHeader {
+      display: none;
+      
+    }
    .logInContainer {
-    margin-top:300px;
+    margin-top:500px;
     width: 100%;
    }
    .titlePageLogIn{
@@ -281,10 +300,31 @@ hr {
     font-size: 36px;
    }
    .logInButton {
+    position:static;
    font-size: 66px;
-   padding-left: 121px;
-   text-align: center;
+   padding-left: 20%;
+   margin-top: 58px;
+   
    }
+   .entryButtonText{
+    margin-right: 85px;
+   }
+   .footerBar {
+    display: none;
+   }
+   .footerText{
+    display: none;
+   }
+   .footerEntryPage{
+     background-color: transparent;
+   }
+   .headerEntryPage {
+    background-color: transparent;
+   }
+     .NoAccountText, .registrationStyle{
+       font-size: 40px;
+       margin-top: 10px;
+     }
   }
 
 }
