@@ -262,49 +262,42 @@ header {
 hr {
   width: 60%;
 }
-@media only screen and (max-width: 500px) {
-.bodyEntryPage {
-  height: 120vh;
-  .titlePage {
-    font-size: 14px;
-  }
-  .logo_img {
-    height: 50px;
-  }
-  .headerBar {
-    font-size: 15px;
-    margin: 20px;
-  }
-  .footerText {
-    font-size: 19px;
+@media (min-height: 500px), screen and (orientation: portrait) {
+  .bodyEntryPage {
+    
+    .titlePage{
+      display: none;
+    }
+    .logo_img {
+      display: none;
+
+    }
+    .headerBar {
+      display: none;
+      
+    }
+    .liHeader {
+      display: none;
+      
+    }
+   .logInContainer {
+    margin-top:600px;
+    width: 100%;
+   }
+   .titlePageLogIn{
+    font-size:55px ;
+   }
+   .logInLabel{
+    font-size: 36px;
+   }
+   #label {
+    padding-left: 66px;
+    text-align: center;
+   }
+   .logInButton {
+   font-size: 36px;
+   
+   }
   }
 
-  .footerBar {
-    font-size: 15px;
-  }
-  .titlePageLogIn {
-    font-size: 25px;
-    
-  }
-  .logInLabel{
-    margin-top: 10px;
-    font-size: 19px;
-    margin-left: 5px;
-  }
-  .logInContainer {
-    margin-top: 500px;
-  }
-  .logInButton {
-    font-size: 19px;
-    margin-left: 5px;
-  }
-  .registrationStyle, .forgetPasswordStyle {
-    font-size: 14px;
-    margin-left: 35px;
-    margin-top: 5px;
-  }
-  #label {
-    padding: 4px;
-  }
-}
 }
