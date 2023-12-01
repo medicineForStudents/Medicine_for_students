@@ -264,7 +264,7 @@ hr {
 }
 @media only screen and (max-width: 400px) {
 .bodyEntryPage {
-  height: 125vh;
+  height: 80vh;
   .titlePage {
     font-size: 14px;
   }
