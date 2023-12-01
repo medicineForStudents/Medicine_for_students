@@ -262,3 +262,47 @@ header {
 hr {
   width: 60%;
 }
+/*@media only screen and (max-width: 600px) {
+.bodyEntryPage {
+  height: 125vh;
+  .titlePage {
+    font-size: 14px;
+  }
+  .logo_img {
+    height: 50px;
+  }
+  .headerBar {
+    font-size: 15px;
+    margin: 20px;
+  }
+  .footerText {
+    font-size: 19px;
+  }
+
+  .footerBar {
+    font-size: 15px;
+  }
+  .titlePageLogIn {
+    font-size: 25px;
+  }
+  .logInLabel{
+    margin-top: 10px;
+    font-size: 19px;
+    margin-left: 5px;
+  }
+  
+  .logInButton {
+    font-size: 19px;
+    margin-left: 5px;
+  }
+  .registrationStyle, .forgetPasswordStyle {
+    font-size: 14px;
+    margin-left: 35px;
+    margin-top: 5px;
+  }
+  #label {
+    padding: 4px;
+  }
+  
+}
+}
