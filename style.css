@@ -262,7 +262,7 @@ header {
 hr {
   width: 60%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 400px) {
 .bodyEntryPage {
   height: 125vh;
   .titlePage {
