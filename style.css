@@ -265,38 +265,26 @@ hr {
 @media (min-height: 500px), screen and (orientation: portrait) {
   .bodyEntryPage {
     
-    .titlePage{
-      display: none;
-    }
-    .logo_img {
-      display: none;
-
-    }
-    .headerBar {
-      display: none;
-      
-    }
-    .liHeader {
-      display: none;
-      
-    }
+    
    .logInContainer {
-    margin-top:600px;
+    margin-top:300px;
     width: 100%;
    }
    .titlePageLogIn{
-    font-size:55px ;
+    font-size:85px ;
    }
    .logInLabel{
-    font-size: 36px;
+    font-size: 56px;
    }
    #label {
     padding-left: 66px;
     text-align: center;
+    font-size: 36px;
    }
    .logInButton {
-   font-size: 36px;
-   
+   font-size: 66px;
+   padding-left: 121px;
+   text-align: center;
    }
   }
 
