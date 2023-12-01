@@ -284,14 +284,16 @@ hr {
   }
   .titlePageLogIn {
     font-size: 25px;
-    color: black;
+    
   }
   .logInLabel{
     margin-top: 10px;
     font-size: 19px;
     margin-left: 5px;
   }
-  
+  .logInContainer {
+    margin-top: 500px;
+  }
   .logInButton {
     font-size: 19px;
     margin-left: 5px;
