@@ -268,7 +268,7 @@ hr {
 }
 @media (max-height: 600px), screen and (orientation: portrait) {
   .bodyEntryPage {
-    height: 100vh;
+    height: 90vh;
     .titlePage{
       display: none;
     }
