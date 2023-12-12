@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   height: 90vh;
+  
 }
 .bodyRegistrationPage {
   margin: 0;
@@ -17,34 +18,38 @@ body {
 }
 .indexBody {
   height: 200vh;
+  width: 207vh;
 }
 header {
   background-color: rgb(88, 104, 120);
   text-align: center;
-  padding: 5px;
+  padding: 2px;
  }
  .liHeader {
   display: inline;
   margin: 12px;
  }
+ .dropDownHeader {
+  display: none;
+ }
 .headerBar {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Franklin Gothic Medium';
  }
  .titlePage {
   font-family: 'Franklin Gothic Medium';
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 20px;
   margin-bottom: 30px;
   margin-top: 1px;
  }
  .footerBar {
   color:white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
  }
  Ul {
   list-style-type: none;
@@ -141,13 +146,16 @@ header {
   font-family: 'Franklin Gothic Medium';
   font-size: 23px;
 }
-
-.logo_img {
+.logobttn {
+  background-color: transparent;
+  border: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  
+}
+
+.logo_img {
+  max-height: 100px;
 }
 .examListColumn {
   opacity: 10;
@@ -186,17 +194,6 @@ header {
   margin: 6px;
   border: 3px black solid;
 }
-.indexWelcomingText {
-  font-family: 'Franklin Gothic Medium';
-  font-size: 45px;
-  color: white;
-}
-.welcomingWord {
-  margin: auto;
-  color: white; 
-  font-family: 'Franklin Gothic Medium';
-  font-size: 45px;
-}
 .logInButton:hover {
   background-color: rgb(88, 104, 120);
 }
@@ -225,7 +222,7 @@ header {
 .boldTextindex {
   color:white;
   font-family: 'Pacifico', serif;
-  font-size: 120px;
+  font-size: 55px;
  text-align: center;
   line-height: 400px;
   overflow: hidden;
@@ -252,7 +249,7 @@ header {
   text-align: center;
   margin-top: -720px;
   color: white;
-  font-size: 46px;
+  font-size: 25px;
   font-family:'Arial';
   margin-top:-400px
 }
@@ -260,29 +257,60 @@ header {
   color: white;
  text-align: center;
  font-family:'Arial';
- font-size: 25px;
+ font-size: 15px;
  
 }
 hr {
   width: 60%;
 }
-@media (max-height: 600px), screen and (orientation: portrait) {
+
+@media (max-height: 400px), screen and (orientation: portrait) {
   .bodyEntryPage {
-    height: 90vh;
+    height: 100vh;
     .titlePage{
       display: none;
     }
-    .logo_img {
+   
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropDownHeader{
+      
+      display: block;
+      background-color: transparent;
+      border: 3px white solid;
+      margin-top:60px;
+      margin-left: 40px;
+      border-radius: 60px;
+      padding: 25px;
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      font-family: 'Franklin Gothic Medium';
+    }
+    .dropDownHeader:hover {
+      background-color: rgb(88, 104, 120);
+      border: 6px black solid;
+    }
+    .dropDownContent{
       display: none;
+      position: absolute;
+      background-color: white;
+      
+    }
+    .dropDownContent:hover a {
+      display: block;
+       color: black;
+       font-family: 'Franklin Gothic Medium';
+       font-size: 25px;
+    }
 
+    .dropdown:hover  {
+      display: block;
     }
-    .headerBar {
-      display: none;
-      
-    }
-    .liHeader {
-      display: none;
-      
+    .dropdown-content:hover {
+      display: block;
     }
    .logInContainer {
     margin-top:500px;
@@ -324,6 +352,7 @@ hr {
      .NoAccountText, .registrationStyle{
        font-size: 40px;
        margin-top: 10px;
+       
      }
   }
 
