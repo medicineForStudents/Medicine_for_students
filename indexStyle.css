@@ -1,0 +1,76 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+.indexBody {
+    height: 300vh;
+    width: 207vh;
+  }
+  .welcomingDiv {
+    background-color: rgba(0, 0, 0, 0.381);
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 100px;
+  }
+.welcomingText {
+  color: white;
+  font-size: 75px;
+  font-family: 'Caveat';
+  animation: lights 8s 950ms linear infinite;
+}
+@keyframes lights {
+  0% {
+   
+    text-shadow:
+      0 0 1em hsla(207, 100%, 50%, 0.2),
+      0 0 0.125em hsla(241, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    
+    text-shadow:
+      0 0 1em hsla(222, 100%, 50%, 0.5),
+      0 0 0.125em hsla(207, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    
+    text-shadow:
+      0 0 1em hsla(248, 100%, 50%, 0.5),
+      0 0 0.125em hsla(244, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+   
+    text-shadow:
+      0 0 1em hsla(221, 100%, 50%, 0.5),
+      0 0 0.125em hsla(213, 100%, 82%, 0.5),
+      0.5em -0.125em 0.25em hsla(252, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    
+    text-shadow:
+      0 0 1em hsla(222, 100%, 50%, 0.2),
+      0 0 0.125em hsla(249, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(61, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+.welcomingImgStyle {
+  height: 220px;
+  border: white solid 5px;
+  width: 210px;
+
+  border-radius: 50%;
+  margin-bottom: 160px;
+}
