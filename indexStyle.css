@@ -1,20 +1,23 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
-
-.indexBody {
+body, html {
     height: 300vh;
-    width: 207vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
+
   .welcomingDiv {
+    height: 120px;
     background-color: rgba(0, 0, 0, 0.381);
     margin-top: 80px;
     margin-left: 50px;
     margin-right: 50px;
     padding: 100px;
+    box-shadow: 4px 4px;
   }
 .welcomingText {
   color: white;
-  font-size: 75px;
+  font-size: 35px;
   font-family: 'Caveat';
   animation: lights 8s 950ms linear infinite;
 }
@@ -67,10 +70,20 @@
 }
 
 .welcomingImgStyle {
-  height: 220px;
-  border: white solid 5px;
-  width: 210px;
-
-  border-radius: 50%;
-  margin-bottom: 160px;
+  position: relative;
+  height: 230px;
+  margin-left: 700px;
+  margin-block: -110px;
+  -webkit-filter: grayscale(120%); 
+  filter: grayscale(80%);
+}
+#selection2 {
+  margin-top: 220px;
+}
+.questions {
+  text-align: center;
+}
+.answersDiv {
+  color: white;
+  text-align: center;
 }
