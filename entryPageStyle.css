@@ -204,3 +204,59 @@ body, html {
   bottom: 23px;
   right: 71px;
 }
+
+@media (max-width:480px) {
+ body, html {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x:hidden ;
+ }
+  .links, .entryHeaderBttn, .entryLinks {
+    display: none;
+  }
+
+  .logobttn {
+    margin-left: 120px;
+    margin-right: 0;
+  }
+
+  .textLogInPage, .LogIn,  .information, .informationLogInConatiner {
+    display:none;
+  }
+
+  input {
+    position: relative;
+   margin-left: -25px;
+   top: 131px;
+    
+  }
+
+  .showingPasswordImg, .passwordShowing{
+    margin-left: 183px;
+    position: relative;
+    top:42px
+  }
+
+  .gsi-material-button{
+     position: relative;
+     top: 202px;
+     left: 175px
+  }
+  
+  .registrationLink {
+    position: relative;
+    top: 66px;
+    left: 280px;
+  }
+   
+  .forgetPasswordLink {
+    position: relative;
+    top: 189px;
+    left: 75px
+  }
+  .ContainerSignUpBttn {
+    position: relative;
+    top: 98px;
+    right: 175px;
+  }
+}
