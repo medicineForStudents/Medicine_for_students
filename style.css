@@ -15,12 +15,8 @@ body, html {
 .logo_img {
   max-height: 100px;
 }
-.bodyEntryPage{
-  margin: 0;
-  padding: 0;
-  height: 90vh;
-  
-}
+
+
 .bodyRegistrationPage {
   margin: 0;
   padding: 0;
@@ -54,19 +50,7 @@ body, html {
  .links:hover {
   text-decoration: underline;
  }
- .titlePage {
-  font-family: 'Franklin Gothic Medium';
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-top: 1px;
- }
- .footerBar {
-  color:white;
-  text-decoration: none;
-  font-size: 15px;
- }
+ 
  .entryHeaderBttn {
   background-color: transparent;
   border: 3px black solid; 
@@ -75,273 +59,15 @@ body, html {
   padding-right: 45px;
   padding-top: 12px;
   padding-bottom: 12px;
-  
+  cursor: pointer;
  }
  .entryHeaderBttn:hover {
   background-color: rgba(81, 128, 216, 0.677);
  }
- Ul {
-  list-style-type: none;
-  text-align: center;
-  margin: 12px;
- }
- footer {
-  background-color: rgb(88, 104, 120);
-  bottom: 0;
-  position:fixed; /* Замени 'absolute' с 'fixed' за постоянно показване на футъра в края на прозореца */
-  left: 0;
-  bottom: 0;
-  margin-top: auto;
-  width: 100%;
-  padding: 20px 0; /* Добави вътрешен отстъп за по-добър вид */
-  font-family: 'Franklin Gothic Medium';
-  text-align: center;
-  color: white;
- }
- .footerText {
-  color: white;
-  font-family: 'Franklin Gothic Medium';
-  text-align: center;
- }
- .registrationContainer, .logInContainer{
- opacity: 10;
- width: 60%;
- margin:auto; 
- text-align: center; 
-}
-.titlePageLogIn {
-  color: white;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium' ;
-  font-size: 40px;
-  margin-bottom: 12px;
-}
-.RegistrationLabel {
  
-  height: 100%;
-  display: block;
-  column-count: center;
-
-  text-align: center;
-  font-size: 25px;
-  color: white;
-  font-family: 'Franklin Gothic Medium';
-}
-.registrationButton {
-  display: block;
-  margin: 20px auto;  
-  background-color: transparent;
-  border: 3px solid rgb(255, 255, 255);
-  padding: 6px 70px;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium';
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  border-radius: 66px;
-}
-
-.logInLabel {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 23px;
-  color: white;
-  font-family: 'Franklin Gothic Medium';
-  margin-top: 29px;
-} 
-.logInButton {
-  display: block;
-  margin: 20px auto;  
-  background-color: transparent;
-  border: 3px solid rgb(255, 255, 255);
-  padding: 6px 70px;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium';
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  border-radius: 66px;
-}
-.NoAccountText{
-  color: white;
-  margin: 10px;
-  font-family: 'Franklin Gothic Medium';
-  font-size: 23px;
-}
- .registrationStyle {
-  color: white;
-  margin: 10px;
-  font-family: 'Franklin Gothic Medium';
-  font-size: 23px;
-}
-
-
-.examListColumn {
-  opacity: 10;
-  width: 60%;
-  margin: auto;
-  margin-top: 20px; 
-  text-align: center;
-  text-decoration: none;
-  position: relative;
-}
-.examListTittlePage {
-  color: white;
-  font-size: 40px;
-  font-family: 'Franklin Gothic Medium';
-  margin-top: 60px;
-}
-.examList {
-  text-decoration: none;
-  color: white;
-  font-family: 'Franklin Gothic Medium';
-  font-size: 30px;
-}
-.examButton {
-  border: 4px white solid;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 200px;
-  padding-right: 200px;
-  margin: 20px;
-  background-color: transparent;
-  cursor: pointer;
-}
-#label {
-  padding: 8px;
-  text-align: center;
-  margin: 6px;
-  border: 3px black solid;
-}
-.logInButton:hover {
-  background-color: rgb(88, 104, 120);
-}
-.forgetPasswordStyle:hover {
-   text-decoration: underline;
-}
-.registrationStyle:hover {
-  text-decoration: underline;
-}
-.registrationButton:hover {
-  background-color:rgb(88, 104, 120);
-}
-.animated-text {
-  font-size: 42px;
-  color: white; 
-  font-family: 'Franklin Gothic Medium';
-  margin-left: 35px;
-  margin-top: auto;
-}
-
-
-
-.dna_img {
-  position: relative;
-  height: 160px;
-  margin-top:210px;
-  margin-left: 570px;
-  border: 5px solid rgb(255, 255, 255);
-  border-radius:50%;
-  padding: 12px;
-  width:155px;
-  opacity: 0.9;
-}
 
 
 
 
 
-@media (max-height: 400px), screen and (orientation: portrait) {
-  .bodyEntryPage {
-    height: 100vh;
-    .titlePage{
-      display: none;
-    }
-   
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropDownHeader{
-      
-      display: block;
-      background-color: transparent;
-      border: 3px white solid;
-      margin-top:60px;
-      margin-left: 40px;
-      border-radius: 60px;
-      padding: 25px;
-      text-align: center;
-      color: white;
-      font-size: 36px;
-      font-family: 'Franklin Gothic Medium';
-    }
-    .dropDownHeader:hover {
-      background-color: rgb(88, 104, 120);
-      border: 6px black solid;
-    }
-    .dropDownContent{
-      display: none;
-      position: absolute;
-      background-color: white;
-      
-    }
-    .dropDownContent:hover a {
-      display: block;
-       color: black;
-       font-family: 'Franklin Gothic Medium';
-       font-size: 25px;
-    }
 
-    .dropdown:hover  {
-      display: block;
-    }
-    .dropdown-content:hover {
-      display: block;
-    }
-   .logInContainer {
-    margin-top:500px;
-    width: 100%;
-   }
-   .titlePageLogIn{
-    font-size:85px ;
-   }
-   .logInLabel{
-    font-size: 56px;
-   }
-   #label {
-    padding-left: 66px;
-    text-align: center;
-    font-size: 36px;
-   }
-   .logInButton {
-    position:static;
-   font-size: 66px;
-   padding-left: 20%;
-   margin-top: 58px;
-   
-   }
-   .entryButtonText{
-    margin-right: 85px;
-   }
-   .footerBar {
-    display: none;
-   }
-   .footerText{
-    display: none;
-   }
-   .footerEntryPage{
-     background-color: transparent;
-   }
-   .headerEntryPage {
-    background-color: transparent;
-   }
-     .NoAccountText, .registrationStyle{
-       font-size: 40px;
-       margin-top: 10px;
-       
-     }
-  }
-
-}

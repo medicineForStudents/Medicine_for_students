@@ -7,13 +7,14 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="indexStyle.css">
         <link rel = "icon" href = "logo.png" type = "image/x-icon"> 
-       <script src="scriptIndex.js"></script>
+        <script src="scriptIndex.js"></script>
     </head>
     <body class="indexBody">
        
-        <selection id="selection1">
+       
         <div class="header">  
         <button class="logobttn"><a href="index.html"><img src="Всичко за кандидат-студентите по медицина-logos_white.png" class="logo_img"></a></button>
+        
         <div class="linksDiv"> 
         <a href="index.html" class="links">Начало</a>  
           <a href="lesson.html" class="links">Преговор</a>  
@@ -21,12 +22,12 @@
           <a href="information.html" class="links">Важна информация</a>
           <button class="entryHeaderBttn"><a href="entryPage.html" class="entryLinks">Вход</a></button>
         </div>
-        </div>
+       </div>
        
         
        <div class="indexContent">
 
-        <div class="welcomingDiv" id="selection1">             
+        <div class="welcomingDiv">             
             <h1 class="welcomingText"><b>Добре дошли !</b></h1>
             <img src="hand-drawn-genes-and-dna-illustration-png.webp" class="welcomingImgStyle">    
         </div>
@@ -41,5 +42,23 @@
         </div>
   
     </div> 
+    <script>
+   
+  
+  let welcomingContainers = document.getElementsByClassName('welcomingDiv');
+
+  for (let i = 0; i < welcomingContainers.length; i++) {
+    let container = welcomingContainers[i];
+    
+    if (container.offsetWidth < 1000) {
+      container.style.position = 'relative';
+      container.style.left = '1120px';
+    }
+  }
+
+
+
+
+    </script>
     </body>
 </html>
