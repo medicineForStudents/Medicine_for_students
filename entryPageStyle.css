@@ -101,7 +101,7 @@ body, html {
 }
 .gsi-material-button{
   margin-left: -400px;
-  margin-top: -111px;
+  margin-top: -64px;
 }
 .gsi-material-button .gsi-material-button-icon {
   height: 20px;
@@ -198,6 +198,7 @@ body, html {
  height: 19px;
 
 }
+.ContainerSignUpBttn:hover {background-color: rgba(81, 128, 216, 0.677);}
 
 .showingPasswordImg, .passwordShowing {
   position: relative;
