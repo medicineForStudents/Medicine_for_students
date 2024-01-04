@@ -208,7 +208,7 @@ body, html {
 
 @media only screen and (max-width:480px) {
     body, html {
-      height: 980px;
+      height: 780px;
       width: 1060px;
     }
   .links, .entryHeaderBttn, .entryLinks {
