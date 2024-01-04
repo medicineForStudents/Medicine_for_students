@@ -209,7 +209,7 @@ body, html {
 @media only screen and (max-width:480px) {
     body, html {
       height: 189vh;
-      width: 120vh;
+      width: 70vh;
     }
   .links, .entryHeaderBttn, .entryLinks {
     display: none;
