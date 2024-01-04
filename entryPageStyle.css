@@ -186,7 +186,7 @@ body, html {
 .registrationLink {
   font-family:'Montserrat', sans-serif; 
   font-size: 14px;
-  margin-left: -380px;
+  margin-left: -407px;
   color: white;
 }
 .passwordShowing {
@@ -206,18 +206,17 @@ body, html {
   right: 71px;
 }
 
-@media (max-width:480px) {
- body, html {
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x:hidden ;
- }
+@media only screen and (max-width:480px) {
+    body, html {
+      height: 189vh;
+      width: 87vh;
+    }
   .links, .entryHeaderBttn, .entryLinks {
     display: none;
   }
 
   .logobttn {
-    margin-left: 120px;
+    margin-left: 220px;
     margin-right: 0;
   }
 
@@ -225,13 +224,21 @@ body, html {
     display:none;
   }
 
-  input {
-    position: relative;
-   margin-left: -25px;
-   top: 131px;
-    
+.formContainer {
+ margin-bottom: -220px;
+ width: 395px;
+}
+ 
+form {
+  position: relative;
+  margin-top: -220px;
+  right: -120px;
+}
+ input {
+   position: relative;
+  top: 132px;
+  left: 180px;
   }
-
   .showingPasswordImg, .passwordShowing{
     margin-left: 183px;
     position: relative;
@@ -241,19 +248,19 @@ body, html {
   .gsi-material-button{
      position: relative;
      top: 202px;
-     left: 175px
+     left: 305px
   }
   
   .registrationLink {
     position: relative;
-    top: 66px;
-    left: 280px;
+    top: 99px;
+    left: 414px;
   }
    
   .forgetPasswordLink {
     position: relative;
-    top: 189px;
-    left: 75px
+    top: 222px;
+    left: 67px
   }
   .ContainerSignUpBttn {
     position: relative;
