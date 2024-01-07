@@ -2,90 +2,95 @@
   @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 body, html {
     height: 300vh;
+    overflow-y: smooth;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-
-  .welcomingDiv {
-    position: relative; 
-    max-width: 950px;
-    height: 120px;
-    background-color: rgba(0, 0, 0, 0.381);
-    margin-top: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 100px;
-    box-shadow: 4px 4px;
-  }
-.welcomingText {
-  color: white;
-  font-size: 35px;
-  font-family: 'Caveat';
-  animation: lights 8s 950ms linear infinite;
-}
-@keyframes lights {
-  0% {
-   
-    text-shadow:
-      0 0 1em hsla(207, 100%, 50%, 0.2),
-      0 0 0.125em hsla(241, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
   
-  30% { 
-    
-    text-shadow:
-      0 0 1em hsla(222, 100%, 50%, 0.5),
-      0 0 0.125em hsla(207, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-  
-  40% { 
-    
-    text-shadow:
-      0 0 1em hsla(248, 100%, 50%, 0.5),
-      0 0 0.125em hsla(244, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  70% {
-   
-    text-shadow:
-      0 0 1em hsla(221, 100%, 50%, 0.5),
-      0 0 0.125em hsla(213, 100%, 82%, 0.5),
-      0.5em -0.125em 0.25em hsla(252, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  100% {
-    
-    text-shadow:
-      0 0 1em hsla(222, 100%, 50%, 0.2),
-      0 0 0.125em hsla(249, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(61, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-  
-}
-
-.welcomingImgStyle {
+ 
+.welcomingContainer {
   position: relative;
-  height: 230px;
-  left:580px;
-  bottom:120px;
-  -webkit-filter: grayscale(120%); 
-  filter: grayscale(80%);
+  top: 150px;
+  padding: 60px;
+
+
+} 
+
+.welcomingImg{
+  height: 480px;
+  position: relative;
+  bottom: 280px;
+  float: right;
 }
-#selection2 {
-  margin-top: 220px;
+
+.textInner {
+  position: relative;
+  bottom: 30px;
+  font-family: 'Unbounded', sans-serif;
+  color: rgb(0,72,96);
+  font-size: 65px;
+  font-weight: bold;
 }
-.questions {
-  text-align: center;
-}
-.answersDiv {
+.question {
+  position: relative;
+  top: 440px;
   color: white;
+  font-size: 26px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
+
+.answerColmContainer1, .answerColmContainer2, .answerColmContainer3 {
+ position: relative;
+ top: 770px;
+left: 50%; 
+transform: translate(-50%);
+ width: 50%;
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-top:30px;
+ padding-bottom: 30px;
+  border: solid 5px black;
+  border-radius: 30px;
+  color: rgb(0,72,96);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.answersTopic{
+  text-align: center;
+  font-size: 36px;
+  color: black;
+}
+
+
+.answers {
+  position: relative;
+  left: 20px;
+  font-size: 14px;
+  
+}
+
+
+
+#question1{
+  font-size: 35px;
+  position: absolute;
+  top: 840px;
+  left: 50%;
+transform: translate(-50%);
+  text-align: center;
+ font-family:'Montserrat', sans-serif;
+
+}
+
+.questionContainer {
+  border-bottom: 3px dotted black;
+  max-width: 1060px;
+  position: relative;
+  bottom: 120px;
+
+}
+
+
+

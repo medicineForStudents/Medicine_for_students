@@ -4,7 +4,7 @@ body, html {
   margin: 0;
   padding: 0;
   /* Градиент, който покрива целия фон на страницата  */
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(25, 27, 62),rgb(29, 34, 70), rgb(37, 44, 96), rgb(18, 62, 121));
+  background-color: rgb(232, 251, 255);
 }
 .logobttn {
   background-color: transparent;
@@ -30,17 +30,16 @@ body, html {
 .links {
   margin-right: 15px;
   text-decoration: none;
-  color: white;
-  font-family: 'Franklin Gothic Medium';
-  
+  color: rgb(0,72,96);
+   font-family: 'Franklin Gothic Medium';
 }
-.entryLinks{
+.entryLinks {
   text-align: center;
-  color:white;
+  color: rgb(0,72,96);
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium';
-
+ 
 }
+
 .linksDiv {
   margin-top: 40px; 
   text-align: right;
@@ -51,7 +50,7 @@ body, html {
   text-decoration: underline;
  }
  
- .entryHeaderBttn {
+ #entryHeaderBttn {
   background-color: transparent;
   border: 3px black solid; 
   border-radius: 60px;
@@ -60,9 +59,13 @@ body, html {
   padding-top: 12px;
   padding-bottom: 12px;
   cursor: pointer;
+  font-size: 15px;
+ color: rgb(0,72,96);
+  font-family: 'Franklin Gothic Medium';
  }
- .entryHeaderBttn:hover {
+ #entryHeaderBttn:hover {
   background-color: rgba(81, 128, 216, 0.677);
+  color: black;
  }
  
 

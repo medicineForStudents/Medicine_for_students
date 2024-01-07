@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="header">  
-        <button class="logobttn"><a href="index.html"><img src="Всичко за кандидат-студентите по медицина-logos_white.png" class="logo_img"></a></button>
+        <button class="logobttn"><a href="index.html"><img src="Всичко за кандидат-студентите по медицина-logos_black.png" class="logo_img"></a></button>
         <div class="linksDiv"> 
         <a href="index.html" class="links">Начало</a>  
           <a href="lesson.html" class="links">Преговор</a>  
           <a href="exams.html" class="links">Изпити</a>
           <a href="information.html" class="links">Важна информация</a>
-          <button class="entryHeaderBttn"><a href="entryPage.html" class="entryLinks">Вход</a></button>
+          <input type="button" id="entryHeaderBttn" onclick="window.location.href='entryPage.html';" value="Вход">
         </div> 
         </div>
         
@@ -36,7 +36,7 @@
             <input class="formInput" id="passwordShowing" placeholder="Въведете парола" type="password" required><br><br>
             <button class="passwordShowing" onclick="myFunction()"><img src="4779893-200.png" class="showingPasswordImg"></button><br>
             <a href="forgetPassword.html" class="forgetPasswordLink">Забравена парола?</a><br>
-            <button class="ContainerSignUpBttn"><p class="regBttn"><b>Вход</b></p></button> 
+            <button class="ContainerSignUpBttn" type="submit"><p class="regBttn"><b>Вход</b></p></button> 
              
             </form><br>
           <button class="gsi-material-button">
@@ -68,6 +68,11 @@
                     x.type = 'password';
                 }
             }
+
             </script>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
 </body>
 </html>
