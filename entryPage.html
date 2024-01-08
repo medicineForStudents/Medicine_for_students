@@ -8,6 +8,8 @@
     <title>Вход</title>
 </head>
 <body>
+  <script src="logInWithFB.js"></script>
+  <script src="firebaseConnection.js"></script>
     <div class="header">  
         <button class="logobttn"><a href="index.html"><img src="Всичко за кандидат-студентите по медицина-logos_black.png" class="logo_img"></a></button>
         <div class="linksDiv"> 
@@ -32,8 +34,8 @@
             <form action="" post>
             <br>
             <br>
-            <input class="formInput" placeholder="Въведете имейл" type="text" required> <br><br>
-            <input class="formInput" id="passwordShowing" placeholder="Въведете парола" type="password" required><br><br>
+            <input class="formInput" placeholder="Въведете имейл" type="email" required name="email" id="email"> <br><br>
+            <input class="formInput" id="passwordShowing" placeholder="Въведете парола" type="password" name="password" id="password"><br><br>
             <button class="passwordShowing" onclick="myFunction()"><img src="4779893-200.png" class="showingPasswordImg"></button><br>
             <a href="forgetPassword.html" class="forgetPasswordLink">Забравена парола?</a><br>
             <button class="ContainerSignUpBttn" type="submit"><p class="regBttn"><b>Вход</b></p></button> 
