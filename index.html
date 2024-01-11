@@ -12,15 +12,17 @@
     <body class="indexBody">
        <script src="clickLogInBttn.js" onclick="buttonClick()"></script>
        
-        <div class="header">  
+        <div class="header", id="header"onclick="headerscroll()">  
         <button class="logobttn"><a href="index.html"><img src="Всичко за кандидат-студентите по медицина-logos_black.png" class="logo_img"></a></button>
         
-        <div class="linksDiv"> 
+        <div class="linksDiv" > 
         <a href="index.html" class="links">Начало</a>  
           <a href="lesson.html" class="links">Преговор</a>  
           <a href="exams.html" class="links">Изпити</a>
           <a href="information.html" class="links">Важна информация</a>
-          <input type="button" id="entryHeaderBttn" onclick="window.location.href='entryPage.html'" value="Вход">
+
+       
+        <input type="button" id="entryHeaderBttn" onclick="window.location.href='entryPage.html'" value="Вход">
         </div>
        </div>
        
@@ -31,9 +33,10 @@
       </div>
 
        
-        
+        <div class="questionAnswerContainer">
        <div id="question1"></div>
       <br>
+      
 
         <div class="answerColmContainer1">
           <h1 class="answersTopic", id="answerTopic1">Надежност</h1>
@@ -53,7 +56,7 @@
         </div><br>
 
       </div>
-     
+     </div>
       
     
 
@@ -62,8 +65,8 @@
     <script>
  document.addEventListener('DOMContentLoaded', function() {
     let start = 0; 
-    let text = 'Добре дошли!';
-    let speed = 140;
+    let text = 'Добре дошли в BioMedicine!';
+    let speed = 110;
     let textInnerElement = document.querySelector('.textInner');
 
     function typeWriter() {
@@ -98,7 +101,7 @@ addEventListener('wheel', function showingQuestion(event) {
     if (event.deltaY > 0) {
         scroll += event.deltaY;
     }
-    if (scroll >= 540) {
+    if (scroll >= 340) {
         typeWriter2(); // Call the function when scroll reaches 80
     }
 });
@@ -115,7 +118,7 @@ addEventListener('wheel', function showingQuestion(event) {
          scroll1 += event.deltaY;
          }
 
-         if (scroll1 >= 680){
+         if (scroll1 >= 480){
           text1.style.color = "#43B68A";
          }
          
@@ -127,7 +130,7 @@ addEventListener('wheel', function showingQuestion(event) {
         if(event.deltaY>0){
           scroll2 +=event.deltaY;
         }
-         if (scroll2 >= 980){
+         if (scroll2 >= 680){
           text2.style.color = "#43B68A";
          }
        });
@@ -139,7 +142,7 @@ addEventListener('wheel', function showingQuestion(event) {
           scroll3+=event.deltaY; 
 
         }
-        if (scroll3 >= 1180) {
+        if (scroll3 >= 880) {
           text3.style.color = '#43B68A';
         }
 
@@ -147,6 +150,22 @@ addEventListener('wheel', function showingQuestion(event) {
 
     </script>
   
+<script>
+  
+  const header = document.getElementById('header');
+
+addEventListener('scroll', function headerscroll() {
+  if (window.scrollY > 320) {
+    header.classList.add('fixed-header');
+  }
+  else {
+    
+    header.classList.remove('fixed-header');
+  }
+});
+
+</script>
+
     </body>
 
 </html>

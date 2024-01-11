@@ -41,6 +41,7 @@ body, html {
 }
 
 .linksDiv {
+  z-index: 1000;
   margin-top: 40px; 
   text-align: right;
   margin-left: auto;
@@ -66,6 +67,11 @@ body, html {
  #entryHeaderBttn:hover {
   background-color: rgba(81, 128, 216, 0.677);
   color: black;
+ }
+ .labelHeader{
+  position: relative;
+  right: 600px;
+ float: left;
  }
  
 

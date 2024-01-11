@@ -4,30 +4,38 @@ body, html {
     height: 300vh;
     overflow-y: smooth;
     overflow-x: hidden;
-  
+    overscroll-behavior-y: scroll;
   }
  
 .welcomingContainer {
   position: relative;
-  top: 150px;
-  padding: 60px;
+  border-radius: 0 0 120px  120px;
+  padding-left: 160px;
+  padding-top: 360px;
+  background-color: rgb(65, 104, 133);
 
 
 } 
-
+.links{
+  color: white;
+}
+#entryHeaderBttn{
+  color: white;
+}
 .welcomingImg{
-  height: 480px;
+  height: 380px;
   position: relative;
-  bottom: 280px;
+  bottom: 420px;
   float: right;
+  border-radius: 0 0 120px 0 ;
 }
 
 .textInner {
   position: relative;
-  bottom: 30px;
+  bottom: 180px;
   font-family: 'Unbounded', sans-serif;
-  color: rgb(0,72,96);
-  font-size: 65px;
+  color: white;
+  font-size: 45px;
   font-weight: bold;
 }
 .question {
@@ -76,7 +84,7 @@ transform: translate(-50%);
 #question1{
   font-size: 35px;
   position: absolute;
-  top: 840px;
+  top: 640px;
   left: 50%;
 transform: translate(-50%);
   text-align: center;
@@ -84,13 +92,32 @@ transform: translate(-50%);
 
 }
 
-.questionContainer {
-  border-bottom: 3px dotted black;
-  max-width: 1060px;
+.questionAnswerContainer{
   position: relative;
-  bottom: 120px;
-
+    bottom: 502px;
 }
 
+.header{
+ background-color: rgb(65, 104, 133);
+}
+.fixed-header{
+  padding-left:30px ;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  opacity: 10;
+  border-radius: 0  120px  0 120px;
 
+}
+.logo_img {
+   height:80px;  
+}
+.links {
+  position: relative;
+  bottom:10px;
+}
+input {
+  position: relative;
+  bottom: 10px;
+}
 
