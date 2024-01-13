@@ -111,25 +111,23 @@ addEventListener('wheel', function showingQuestion(event) {
 
     
     <script>
-     let text1 = document.getElementById('answerTopic1');
-      let scroll1 = 0;
-      addEventListener('wheel', function coloredText1 (event){
-         if (event.deltaY>0){
-         scroll1 += event.deltaY;
-         }
+  let text1 = document.getElementById('answerTopic1');
+let scroll1 = 0;
 
-         if (scroll1 >= 480){
-          text1.style.color = "#43B68A";
-         }
-         
-      }); 
+// Променено събитие от 'wheel' на 'scroll'
+addEventListener('scroll', function coloredText1(event) {
+  // Използвайте pageYOffset, за да получите текущата позиция на скролбара
+  scroll1 = window.pageYOffset;
+
+  if (scroll1 >= 480) {
+    text1.style.color = "#43B68A";
+  }
+});
       let text2 = document.getElementById('answerTopic2');
       let scroll2 = 0; 
-       addEventListener('wheel', function coloredText2 (event){
+       addEventListener('scroll', function coloredText2 (event){
 
-        if(event.deltaY>0){
-          scroll2 +=event.deltaY;
-        }
+        scroll2 = window.pageYOffset;
          if (scroll2 >= 680){
           text2.style.color = "#43B68A";
          }
@@ -137,11 +135,8 @@ addEventListener('wheel', function showingQuestion(event) {
    
       let text3 = document.getElementById('answerTopic3'); 
       let scroll3 = 0; 
-      addEventListener('wheel', function coloredText3 (event){
-        if (event.deltaY>0){
-          scroll3+=event.deltaY; 
-
-        }
+      addEventListener('scroll', function coloredText3 (event){
+       scroll3 = window.pageYOffset;
         if (scroll3 >= 880) {
           text3.style.color = '#43B68A';
         }
