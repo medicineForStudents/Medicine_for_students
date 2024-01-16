@@ -51,7 +51,7 @@ hr{
 .titleScreen{
     background-color: rgb(65, 104, 133);
     padding-left: 320px;
-    padding-top: 420px;
+    padding-top: 320px;
     border-radius: 0 0 100px 100px;
 }
 .title{
@@ -64,7 +64,8 @@ hr{
     font-size: 36px;
 }
 .titleImg{
-    height: 180px;
+    height: 150px;
     position: relative;
-    bottom: 120px;
+    bottom: 150px;
+    left: 120px;
 }
