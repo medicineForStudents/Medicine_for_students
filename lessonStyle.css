@@ -1,5 +1,16 @@
 body {
     height: 360vh;
+    overflow-x: hidden;
+}
+.header{
+    background-color: rgb(65, 104, 133);
+
+}
+.links{
+    color: white;
+}
+#entryHeaderBttn{
+    color: white;
 }
 .infoContainer {
     text-align: center;
@@ -15,7 +26,7 @@ hr{
 }
 
 .tissueContainer {
-    top: 220px;
+    top: 720px;
     border: 3px solid black;
     width: 120vh;
     position: absolute;
@@ -35,4 +46,25 @@ hr{
     top:220px;
    
     font-size: 36px;
+}
+
+.titleScreen{
+    background-color: rgb(65, 104, 133);
+    padding-left: 320px;
+    padding-top: 420px;
+    border-radius: 0 0 100px 100px;
+}
+.title{
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 36px;
+}
+.titleImg{
+    height: 180px;
+    position: relative;
+    bottom: 120px;
 }
